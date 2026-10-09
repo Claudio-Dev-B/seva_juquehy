@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sevá Juquehy — Em breve mais uma Sevá</title>
+  <meta name="description" content="Em breve mais uma Sevá. A segunda unidade da cervejaria e restaurante Sevá chega a Juquehy em 14 de novembro.">
+  <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="canonical" href="https://sevajuquehy.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sevá Juquehy — Em breve mais uma Sevá">
+  <meta property="og:description" content="A segunda unidade do Sevá chega a Juquehy em 14 de novembro.">
+  <meta property="og:url" content="https://sevajuquehy.com.br/">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Barlow+Condensed:wght@600;700;800;900&display=swap">
+  <style>
+    :root{--verde:#2D6A4F;--verde-dark:#1B4332;--verde-mid:#40916C;--verde-light:#74C69D;--verde-pale:#D8F3DC;--sand:#F5F0E8;--gold:#C4963A;--gold-light:#E8D49A;--dark:#1a1a1a;--sans:'Barlow',sans-serif;--caps:'Barlow Condensed',sans-serif}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{font-family:var(--sans);color:var(--sand);background:var(--verde-dark);overflow-x:hidden}
+    main{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px 20px;position:relative;
+      background:radial-gradient(ellipse at 50% 30%,var(--verde) 0%,var(--verde-dark) 65%,#0f2a20 100%)}
+    .logo{width:clamp(72px,10vw,110px);margin-bottom:clamp(24px,5vh,56px);filter:brightness(0) invert(1);opacity:.95}
+    h1{font-family:var(--caps);font-weight:900;text-transform:uppercase;line-height:.88;letter-spacing:.01em;font-size:clamp(3.4rem,15vw,13rem)}
+    h1 span{display:block}
+    h1 .acc{color:var(--gold-light)}
+    .sub{font-family:var(--caps);font-weight:600;text-transform:uppercase;letter-spacing:.35em;color:var(--verde-light);font-size:clamp(.8rem,2vw,1.15rem);margin-top:clamp(20px,4vh,40px)}
+    .count{display:flex;gap:clamp(10px,3vw,40px);margin-top:clamp(28px,6vh,64px);justify-content:center}
+    .unit{min-width:clamp(64px,13vw,150px);padding:clamp(12px,2vw,24px) 6px;border:1px solid rgba(216,243,220,.25);background:rgba(15,42,32,.35)}
+    .num{display:block;font-family:var(--caps);font-weight:800;line-height:1;font-size:clamp(2.2rem,8vw,5.5rem);font-variant-numeric:tabular-nums}
+    .lbl{display:block;margin-top:8px;font-family:var(--caps);font-weight:600;text-transform:uppercase;letter-spacing:.2em;font-size:clamp(.65rem,1.6vw,.95rem);color:var(--verde-light)}
+    .open{display:none;font-family:var(--caps);font-weight:800;text-transform:uppercase;font-size:clamp(1.6rem,5vw,3.5rem);color:var(--gold-light);margin-top:clamp(28px,6vh,64px)}
+    .done .count{display:none}.done .open{display:block}
+    footer{position:absolute;bottom:20px;left:0;right:0;font-family:var(--caps);letter-spacing:.2em;text-transform:uppercase;font-size:.8rem;color:rgba(245,240,232,.6)}
+    footer a{color:var(--gold-light)}
+    @media(max-width:480px){.count{gap:8px}.unit{min-width:0;flex:1}h1{font-size:clamp(3rem,18vw,5rem)}}
+  </style>
+</head>
+<body>
+  <main id="main">
+    <img class="logo" src="images/logo_seva.webp" alt="Sevá">
+    <h1><span>Em breve</span><span class="acc">mais uma Sevá</span></h1>
+    <p class="sub">Juquehy · 14 de novembro</p>
+    <div class="count" id="count" role="timer" aria-live="off">
+      <div class="unit"><span class="num" id="d">00</span><span class="lbl">Dias</span></div>
+      <div class="unit"><span class="num" id="h">00</span><span class="lbl">Horas</span></div>
+      <div class="unit"><span class="num" id="m">00</span><span class="lbl">Min</span></div>
+      <div class="unit"><span class="num" id="s">00</span><span class="lbl">Seg</span></div>
+    </div>
+    <p class="open">Chegamos!</p>
+    <footer>Siga <a href="https://www.instagram.com/sevacerveja/" target="_blank" rel="noopener">@sevacerveja</a></footer>
+  </main>
+  <script>
+    (function(){
+      // 14/11/2026 à 00:00 (Brasília, UTC-3)
+      var target=new Date(Date.UTC(2026,10,14,3,0,0));
+      var el={d:d,h:h,m:m,s:s}, main=document.getElementById('main');
+      function p(n){return n<10?'0'+n:''+n}
+      function tick(){
+        var diff=target-new Date();
+        if(diff<=0){main.classList.add('done');return false}
+        var t=Math.floor(diff/1000);
+        el.d.textContent=p(Math.floor(t/86400));
+        el.h.textContent=p(Math.floor(t%86400/3600));
+        el.m.textContent=p(Math.floor(t%3600/60));
+        el.s.textContent=p(t%60);
+        return true;
+      }
+      if(tick()) var iv=setInterval(function(){if(!tick())clearInterval(iv)},1000);
+    })();
+  </script>
+</body>
+</html>
