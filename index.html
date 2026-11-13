@@ -75,8 +75,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-  <!-- Pré-carrega a imagem crítica do hero (LCP) — mobile e desktop carregam imagens diferentes -->
-  <link rel="preload" as="image" href="images/Pratos/banner_hero.webp" media="(max-width: 767px)" fetchpriority="high">
+  <link rel="preload" as="image" href="images/fotos/DSC08130.webp" fetchpriority="high">
   <link rel="preload" as="image" href="images/fotos/DSC08130.webp" media="(min-width: 768px)" fetchpriority="high">
   <!-- Fontes: carregadas como <link> (evita bloqueio do @import em CSS) -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,400&family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,600&display=swap" media="print" onload="this.media='all'">
@@ -109,7 +108,7 @@
     .hero-content{position:relative;z-index:2;width:100%;max-width:1000px;margin:0 auto;padding:0 clamp(24px,5vw,64px);text-align:center}
     .hero-line-clip{display:block;overflow:hidden;line-height:1;padding-bottom:6px}
     .hero-line-inner{display:block;font-family:var(--caps);font-size:clamp(3rem,6vw,7.5rem);font-weight:900;text-transform:uppercase;letter-spacing:-.01em;color:var(--white);line-height:1;will-change:transform}
-    @media(max-width:767px){.hero-slide-img{background-image:url('../images/Pratos/banner_hero.webp')!important}.hamburger{display:flex}.nav-links{display:none}}
+    @media(max-width:767px){.hamburger{display:flex}.nav-links{display:none}}
   </style>
   <!-- style.css carregado de forma não-bloqueante -->
   <link rel="preload" as="style" href="css/style.min.css" onload="this.onload=null;this.rel='stylesheet'">
@@ -117,6 +116,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
   <meta name="theme-color" content="#2D6A4F">
+
+  <style>
+    .other-unit{position:relative;background:var(--verde-dark);color:var(--sand);padding:clamp(70px,9vw,130px) clamp(20px,5vw,64px);overflow:hidden}
+    .other-unit-inner{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,5vw,72px);align-items:center}
+    .other-unit-photo{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 30px 70px rgba(0,0,0,.4)}
+    .other-unit-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+    .other-unit:hover .other-unit-photo img{transform:scale(1.05)}
+    .other-unit-eyebrow{display:block;font-family:var(--caps);font-size:.85rem;font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--verde-light);margin-bottom:18px}
+    .other-unit-title{font-family:var(--caps);font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.92;font-size:clamp(2.6rem,6vw,5.2rem);color:#fff;margin-bottom:24px}
+    .other-unit-text{font-family:var(--sans);font-size:clamp(1rem,1.3vw,1.12rem);line-height:1.75;color:rgba(255,255,255,.78);max-width:520px;margin-bottom:34px}
+    .other-unit-cta{display:inline-flex;align-items:center;gap:12px;font-family:var(--caps);font-weight:700;font-size:1rem;letter-spacing:.14em;text-transform:uppercase;padding:16px 30px;border-radius:999px;background:var(--gold);color:var(--verde-dark);text-decoration:none;transition:background .25s,transform .25s}
+    .other-unit-cta:hover{background:var(--gold-light);transform:translateY(-2px)}
+    .other-unit-cta svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s}
+    .other-unit-cta:hover svg{transform:translateX(4px)}
+    @media(max-width:860px){.other-unit-inner{grid-template-columns:1fr}.other-unit-photo{aspect-ratio:3/2}}
+  </style>
 </head>
 <body>
 
@@ -324,6 +339,16 @@
             <div class="rest-cat-card-content">
               <div class="rest-cat-name-wrap">
                 <span class="rest-cat-name" data-i18n="jq.card.pratos">Pratos</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="cardapio.html" class="rest-cat-card">
+            <div class="rest-cat-card-bg" style="background-image:url('images/fotos/lanche_peixe.webp')"></div>
+            <div class="rest-cat-card-overlay"></div>
+            <div class="rest-cat-card-content">
+              <div class="rest-cat-name-wrap">
+                <span class="rest-cat-name" data-i18n="jq.card.lanches">Lanches</span>
               </div>
             </div>
           </a>
@@ -606,6 +631,19 @@
   </section>
 
   <!-- FOOTER -->
+  
+  <section class="other-unit" id="outra-unidade" aria-labelledby="otherUnitTitle">
+    <div class="other-unit-inner">
+      <div class="other-unit-photo reveal-l"><img src="images/unidade_camburi.webp" alt="Sevá Camburi" loading="lazy" decoding="async" width="1400" height="933"></div>
+      <div class="other-unit-body reveal-r">
+        <span class="other-unit-eyebrow" data-i18n="other.eyebrow">Duas praias, duas casas</span>
+        <h2 class="other-unit-title" id="otherUnitTitle" data-i18n="other.title">Conheça a Sevá Camburi</h2>
+        <p class="other-unit-text" data-i18n="other.text">Cada praia é diferente, e cada Sevá também. Em Camburi, nossa casa original tem um cardápio de pratos exclusivos e autorais, criado para aquele pedaço de litoral e para uma experiência só dela, do primeiro chope à última garfada.</p>
+        <a class="other-unit-cta" href="https://sevacamburi.com.br/" data-i18n="other.cta">Conhecer a Sevá Camburi<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+
   <footer id="footer">
 
     <!-- Topo decorativo: linha verde -->

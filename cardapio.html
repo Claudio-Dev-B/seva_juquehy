@@ -506,7 +506,7 @@
 
     /* régua: foto recortada saindo do card */
     .regua-card { margin-top: 84px; overflow: visible; }
-    .regua-img { flex: 0 0 clamp(240px, 34%, 440px); margin: -76px 0 -40px -6px; position: relative; z-index: 2; }
+    .regua-img { flex: 0 0 clamp(280px, 44%, 520px); margin: -52px 0 -34px -6px; position: relative; z-index: 2; }
     .regua-img img { width: 100%; height: auto; filter: drop-shadow(0 22px 22px rgba(0,0,0,.45)); transform: rotate(-3deg); transition: transform .5s cubic-bezier(.22,.61,.36,1); }
     .regua-card:hover .regua-img img { transform: rotate(0deg) scale(1.05); }
     .regua-info { flex: 1; }
@@ -681,10 +681,7 @@
             <div><span class="cat-script" data-i18n="jq.tapas.script">Para beliscar</span><h2 class="cat-title" data-i18n="jq.tapas.title">Tapas</h2></div>
           </div>
           <div class="cards-grid">
-            <div class="menu-card card-featured">
-              <div class="menu-card-img">
-                <img src="images/menu/tapa_gravilax.webp" alt="Tapa Gravilax" loading="eager" decoding="async" width="1000" height="909">
-              </div>
+            <div class="menu-card card-noimg">
               <div class="menu-card-body">
                 <span class="card-tag" data-i18n="jq.gravilax.tag">Tapa</span>
                 <div class="card-name" data-i18n="jq.gravilax.name">Tapa Gravilax</div>
@@ -693,10 +690,7 @@
                 <div class="card-price">R$&nbsp;29</div>
               </div>
             </div>
-            <div class="menu-card card-featured">
-              <div class="menu-card-img">
-                <img src="images/menu/tapa_jamon.webp" alt="Tapa de Jamon" loading="eager" decoding="async" width="424" height="912">
-              </div>
+            <div class="menu-card card-noimg">
               <div class="menu-card-body">
                 <span class="card-tag" data-i18n="jq.jamon.tag">Tapa</span>
                 <div class="card-name" data-i18n="jq.jamon.name">Tapa de Jamon</div>
@@ -760,10 +754,7 @@
                 <div class="card-price">R$&nbsp;259</div>
               </div>
             </div>
-            <div class="menu-card">
-              <div class="menu-card-img">
-                <img src="images/menu/risoto_cogumelos.webp" alt="Risoto de Cogumelos" loading="lazy" decoding="async" width="1000" height="1056">
-              </div>
+            <div class="menu-card card-noimg">
               <div class="menu-card-body">
                 <span class="card-tag" data-i18n="jq.veg">Vegetariano</span>
                 <div class="card-name" data-i18n="jq.risoto_cog.name">Risoto de Cogumelos</div>
@@ -772,10 +763,7 @@
                 <div class="card-price">R$&nbsp;99</div>
               </div>
             </div>
-            <div class="menu-card">
-              <div class="menu-card-img">
-                <img src="images/menu/risoto_camarao.webp" alt="Risoto de Camarão" loading="lazy" decoding="async" width="1000" height="1032">
-              </div>
+            <div class="menu-card card-noimg">
               <div class="menu-card-body">
                 <span class="card-tag" data-i18n="jq.risoto_cam.tag">Prato</span>
                 <div class="card-name" data-i18n="jq.risoto_cam.name">Risoto de Camarão</div>
@@ -838,7 +826,7 @@
 
             <div class="menu-card">
               <div class="menu-card-img img-cover">
-                <img src="images/cervejas/basilon_pilsen.webp" alt="Pilsen" loading="lazy" decoding="async" width="1600" height="1503">
+                <img src="images/cervejas/can_chupim.webp" alt="Pilsen" loading="lazy" decoding="async" width="1100" height="826">
               </div>
               <div class="menu-card-body">
                 <div class="card-name" data-i18n="cardapio.pilsen.name">Pilsen</div>
@@ -854,7 +842,7 @@
 
             <div class="menu-card">
               <div class="menu-card-img img-cover">
-                <img src="images/cervejas/gaviao_neipinha_session_neipa.webp" alt="Session IPA" loading="lazy" decoding="async" width="1920" height="2880">
+                <img src="images/cervejas/can_socozinho.webp" alt="Session IPA" loading="lazy" decoding="async" width="1100" height="1465">
               </div>
               <div class="menu-card-body">
                 <div class="card-name" data-i18n="cardapio.session_ipa.name">Session IPA</div>
@@ -870,7 +858,7 @@
 
             <div class="menu-card">
               <div class="menu-card-img img-cover">
-                <img src="images/cervejas/benedito_sour.webp" alt="Sour Frutas" loading="lazy" decoding="async" width="1600" height="1575">
+                <img src="images/cervejas/can_vovo.webp" alt="Sour Frutas" loading="lazy" decoding="async" width="1100" height="1465">
               </div>
               <div class="menu-card-body">
                 <div class="card-name" data-i18n="cardapio.sour_frutas.name">Sour Frutas</div>
@@ -886,7 +874,7 @@
 
             <div class="menu-card">
               <div class="menu-card-img img-cover">
-                <img src="images/cervejas/pardal_australian_ipa.webp" alt="IPA" loading="lazy" decoding="async" width="1920" height="2880">
+                <img src="images/cervejas/can_bicoverde.webp" alt="IPA" loading="lazy" decoding="async" width="1100" height="1465">
               </div>
               <div class="menu-card-body">
                 <div class="card-name" data-i18n="cardapio.ipa.name">IPA e Hazy IPA</div>
@@ -902,7 +890,7 @@
 
             <div class="menu-card">
               <div class="menu-card-img img-cover">
-                <img src="images/cervejas/coro_coro_double_ipa.webp" alt="Double IPA" loading="lazy" decoding="async" width="858" height="1600">
+                <img src="images/cervejas/can_encontro.webp" alt="Double IPA" loading="lazy" decoding="async" width="1100" height="1465">
               </div>
               <div class="menu-card-body">
                 <div class="card-name" data-i18n="cardapio.double_ipa.name">Double IPA e Hazy Double IPA</div>
@@ -918,7 +906,7 @@
 
             <div class="menu-card">
               <div class="menu-card-img img-cover">
-                <img src="images/cervejas/baixa_temporada_imperial_stout.webp" alt="Imperial Stout" loading="lazy" decoding="async" width="1354" height="1331">
+                <img src="images/cervejas/can_carruira.webp" alt="Imperial Stout" loading="lazy" decoding="async" width="1100" height="1465">
               </div>
               <div class="menu-card-body">
                 <div class="card-name" data-i18n="cardapio.imperial_stout.name">Imperial Stout</div>
@@ -949,7 +937,7 @@
 
           <!-- régua de degustação -->
           <div class="regua-card">
-            <div class="regua-img"><img src="images/regua.webp" alt="Régua de degustação Sevá: 4 copos de 190 ml" loading="lazy" decoding="async" width="1000" height="516"></div>
+            <div class="regua-img"><img src="images/regua.webp" alt="Régua de degustação Sevá: 4 copos de 190 ml" loading="lazy" decoding="async" width="1000" height="281"></div>
             <div class="regua-info">
               <h3 data-i18n="cardapio.chopinho.regua.title">Régua de Degustação</h3>
               <p data-i18n="cardapio.chopinho.regua.desc">4 estilos à sua escolha para conhecer a Sevá — 4 copos de 190 ml cada</p>

@@ -507,6 +507,10 @@
 
       /* Brewery intro p3 + styles */
       'brewery.intro.p3': 'Nossas cervejas recebem nomes de aves da Mata Atlântica, uma homenagem à natureza que inspira a marca desde sua origem em Camburi. Assim como os pássaros que observamos todos os dias, cada rótulo tem personalidade própria. Alguns são leves e refrescantes, outros intensos e marcantes, mas todos carregam o mesmo espírito: o de voar fora do comum.',
+      "other.eyebrow": 'Duas praias, duas casas',
+      "other.title": 'Conheça a Sevá Camburi',
+      "other.text": 'Cada praia é diferente, e cada Sevá também. Em Camburi, nossa casa original tem um cardápio de pratos exclusivos e autorais, criado para aquele pedaço de litoral e para uma experiência só dela, do primeiro chope à última garfada.',
+      "other.cta": 'Conhecer a Sevá Camburi',
       'brewery.styles.eyebrow': 'Nossos Estilos',
       'brewery.styles.title': 'Cerveja com Identidade',
       'brewery.pilsen.name': 'A base de tudo',
@@ -531,7 +535,7 @@
       'gallery.section.title': 'Momentos',
 
       /* Story intro p3 */
-      'story.intro.p3': 'Hoje, a Sevá é cervejaria, restaurante e ponto de encontro em Camburi. Um lugar onde gastronomia autoral, cervejas artesanais e o estilo de vida do litoral se encontram para criar momentos que só poderiam existir aqui.',
+      'story.intro.p3': 'Hoje, a Sevá é cervejaria, restaurante e ponto de encontro da Costa Sul de São Sebastião, com casas em Camburi e Juquehy. Um lugar onde gastronomia autoral, cervejas artesanais e o estilo de vida do litoral se encontram para criar momentos que só poderiam existir aqui.',
     
       /* ── overrides ── */
       "story.t6.title": "Mais uma Sevá",
@@ -588,6 +592,7 @@
       "jq.card.tapas": "Tapas",
       "jq.card.ceviches": "Ceviches",
       "jq.card.pratos": "Pratos",
+      "jq.card.lanches": "Lanches",
       "jq.card.chopinho": "Chopinho",
       "jq.card.drinks": "Drinks",
       "jq.cardapio.hero.eyebrow": "Juquehy · São Sebastião · SP",
@@ -1086,6 +1091,10 @@
 
       /* Brewery intro p3 + styles */
       'brewery.intro.p3': 'Our beers are named after birds of the Atlantic Forest, a tribute to the nature that has inspired the brand since its origins in Camburi. Like the birds we watch every day, each label has its own personality. Some are light and refreshing, others intense and bold — but all carry the same spirit: to fly beyond the ordinary.',
+      "other.eyebrow": 'Two beaches, two houses',
+      "other.title": 'Discover Sevá Camburi',
+      "other.text": 'Every beach is different, and so is every Sevá. In Camburi, our original house has its own menu of exclusive, signature dishes, made for that stretch of coast and for an experience all its own, from the first beer to the last bite.',
+      "other.cta": 'Visit Sevá Camburi',
       'brewery.styles.eyebrow': 'Our Styles',
       'brewery.styles.title': 'Beer with Identity',
       'brewery.pilsen.name': 'The foundation of everything',
@@ -1158,6 +1167,7 @@
       "jq.card.tapas": "Tapas",
       "jq.card.ceviches": "Ceviches",
       "jq.card.pratos": "Mains",
+      "jq.card.lanches": "Sandwiches",
       "jq.card.chopinho": "Draft Beer",
       "jq.card.drinks": "Drinks",
       "jq.cardapio.hero.eyebrow": "Juquehy · São Sebastião · SP",
@@ -1589,6 +1599,10 @@
 
       /* Brewery intro p3 + styles */
       'brewery.intro.p3': 'Nuestras cervezas reciben nombres de aves de la Mata Atlántica, un homenaje a la naturaleza que inspira la marca desde su origen en Camburi. Al igual que los pájaros que observamos cada día, cada etiqueta tiene personalidad propia. Algunas son ligeras y refrescantes, otras intensas y marcadas, pero todas llevan el mismo espíritu: el de volar más allá de lo ordinario.',
+      "other.eyebrow": 'Dos playas, dos casas',
+      "other.title": 'Conoce Sevá Camburi',
+      "other.text": 'Cada playa es distinta, y cada Sevá también. En Camburi, nuestra casa original tiene un menú de platos exclusivos y de autor, creado para ese tramo de costa y para una experiencia propia, desde la primera cerveza hasta el último bocado.',
+      "other.cta": 'Conocer Sevá Camburi',
       'brewery.styles.eyebrow': 'Nuestros Estilos',
       'brewery.styles.title': 'Cerveza con Identidad',
       'brewery.pilsen.name': 'La base de todo',
@@ -1661,6 +1675,7 @@
       "jq.card.tapas": "Tapas",
       "jq.card.ceviches": "Ceviches",
       "jq.card.pratos": "Platos",
+      "jq.card.lanches": "Sándwiches",
       "jq.card.chopinho": "Cerveza de Barril",
       "jq.card.drinks": "Tragos",
       "jq.cardapio.hero.eyebrow": "Juquehy · São Sebastião · SP",

@@ -1076,7 +1076,7 @@ button { border: none; cursor: pointer; background: none; }
 /* ── Cards grandes com imagem de fundo ── */
 .rest-cat-cards {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 0;
   margin-bottom: 0;
 }
@@ -2836,8 +2836,6 @@ button { border: none; cursor: pointer; background: none; }
 @media (max-width: 1024px) {
   .rest-cat-cards { grid-template-columns: repeat(3, 1fr); }
   .rest-cat-card { min-height: 440px; }
-  /* 5º card ocupa a 3ª coluna da segunda linha */
-  .rest-cat-card:last-child { grid-column: 2 / 3; }
   .split-section { grid-template-columns: 1fr; }
   .split-section.reverse { direction: ltr; }
   .split-image { min-height: 380px; order: -1; }
@@ -2862,8 +2860,6 @@ button { border: none; cursor: pointer; background: none; }
   .rest-cat-card { min-height: 380px; }
   /* 2 colunas: cards são ~50vw, aumenta a fonte de volta */
   .rest-cat-name { font-size: clamp(2.4rem, 7vw, 5rem); }
-  /* 5º card ocupa largura total em mobile */
-  .rest-cat-card:last-child { grid-column: 1 / -1; }
   /* Mobile: hero + itens de prato maiores e loop calibrado */
   .rest-hero { height: 72vh; min-height: 420px; }
   .rest-photo-item {
@@ -2883,7 +2879,6 @@ button { border: none; cursor: pointer; background: none; }
   .footer-main { grid-template-columns: 1fr; gap: 36px; padding: 60px 24px 40px; }
   .footer-bottom { flex-direction: column; gap: 10px; text-align: center; padding: 20px 24px; }
   .hero-dots { display: none; }
-  .hero-slide-img { background-image: url('../images/Pratos/banner_hero.webp') !important; }
   .timeline::before { left: 18px; }
   .timeline-item { grid-template-columns: 36px 1fr; }
   .timeline-content-left { display: none; }
